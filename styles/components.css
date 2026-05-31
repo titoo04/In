@@ -1,0 +1,24 @@
+.text-balance {
+  text-wrap: balance;
+}
+
+.font-script {
+  font-family: var(--font-script-family);
+}
+
+.font-arabic {
+  font-family: var(--font-arabic), "Cairo", "Noto Naskh Arabic", serif;
+}
+
+.logo-arabic {
+  font-family: var(--font-arabic), "Cairo", "Noto Naskh Arabic", serif;
+  text-align: justify;
+  text-align-last: justify;
+  text-justify: inter-character;
+}
+
+.font-display {
+  font-family: var(--font-display);
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+}

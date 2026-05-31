@@ -1,0 +1,661 @@
+﻿# Figma Inventory
+
+## Pages
+- 0:1 | Page 1
+
+## Frames
+- 2:28 | landing
+- 2:30 | intro
+- 2:36 | the noise
+- 2:41 | the self
+- 2:46 | the others
+- 2:51 | the past
+- 2:56 | the quiet
+- 2:61 | the now
+- 2:66 | where are you now?
+- 2:69 | Group 42
+- 2:71 | Group 43
+- 2:74 | Group 44
+- 2:77 | Group 45
+- 2:80 | Group 46
+- 2:83 | Group 47
+- 2:86 | Group 57
+- 2:87 | Group 4
+- 2:90 | Group 69
+- 2:93 | noise shop
+- 2:95 | Group 31
+- 2:97 | Group 6
+- 2:100 | Group 5
+- 2:104 | Group 32
+- 2:106 | Group 6
+- 2:109 | Group 5
+- 2:113 | Group 28
+- 2:117 | Group 48
+- 2:118 | Group 58
+- 2:122 | Group 33
+- 2:126 | Group 48
+- 2:131 | Group 5
+- 2:135 | Frame
+- 2:138 | Group 41
+- 2:142 | noise shop
+- 2:144 | Group 31
+- 2:146 | Group 6
+- 2:149 | Group 5
+- 2:153 | Group 32
+- 2:155 | Group 6
+- 2:158 | Group 5
+- 2:162 | Group 28
+- 2:167 | Group 33
+- 2:171 | Group 48
+- 2:176 | Group 5
+- 2:181 | Group 41
+- 2:184 | Group 67
+- 2:185 | Frame
+- 2:187 | Group 49
+- 2:190 | Group 68
+- 2:193 | Group 51
+- 2:194 | Group 51
+- 2:199 | self shop
+- 2:201 | Group 31
+- 2:203 | Group 6
+- 2:206 | Group 5
+- 2:210 | Group 32
+- 2:212 | Group 6
+- 2:215 | Group 5
+- 2:219 | Group 28
+- 2:224 | Group 48
+- 2:225 | Group 58
+- 2:228 | Group 33
+- 2:232 | Group 48
+- 2:237 | Group 5
+- 2:242 | Group 41
+- 2:245 | Frame
+- 2:248 | others shop
+- 2:250 | Group 31
+- 2:252 | Group 6
+- 2:255 | Group 5
+- 2:259 | Group 32
+- 2:261 | Group 6
+- 2:264 | Group 5
+- 2:268 | Group 28
+- 2:273 | Group 48
+- 2:274 | Group 58
+- 2:277 | Group 33
+- 2:281 | Group 48
+- 2:286 | Group 5
+- 2:291 | Group 41
+- 2:294 | Frame
+- 2:297 | past shop
+- 2:299 | Group 31
+- 2:301 | Group 6
+- 2:304 | Group 5
+- 2:308 | Group 32
+- 2:310 | Group 6
+- 2:313 | Group 5
+- 2:317 | Group 28
+- 2:322 | Group 48
+- 2:323 | Group 58
+- 2:326 | Group 33
+- 2:330 | Group 48
+- 2:336 | Group 5
+- 2:341 | Group 41
+- 2:344 | Frame
+- 2:346 | quiet shop
+- 2:348 | Group 31
+- 2:350 | Group 6
+- 2:353 | Group 5
+- 2:357 | Group 32
+- 2:359 | Group 6
+- 2:362 | Group 5
+- 2:366 | Group 28
+- 2:371 | Group 48
+- 2:372 | Group 58
+- 2:375 | Group 33
+- 2:379 | Group 48
+- 2:385 | Group 5
+- 2:390 | Group 41
+- 2:393 | Frame
+- 2:395 | now shop
+- 2:397 | Group 31
+- 2:399 | Group 6
+- 2:402 | Group 5
+- 2:406 | Group 32
+- 2:408 | Group 6
+- 2:411 | Group 5
+- 2:415 | Group 28
+- 2:420 | Group 48
+- 2:421 | Group 58
+- 2:424 | Group 33
+- 2:428 | Group 48
+- 2:433 | Group 5
+- 2:438 | Group 41
+- 2:441 | Frame
+- 2:444 | self shop
+- 2:446 | Group 31
+- 2:448 | Group 6
+- 2:451 | Group 5
+- 2:455 | Group 32
+- 2:457 | Group 6
+- 2:460 | Group 5
+- 2:464 | Group 28
+- 2:469 | Group 33
+- 2:473 | Group 48
+- 2:478 | Group 5
+- 2:483 | Group 41
+- 2:486 | Group 68
+- 2:489 | Group 51
+- 2:490 | Group 51
+- 2:494 | Group 67
+- 2:495 | Frame
+- 2:497 | Group 49
+- 2:501 | others shop
+- 2:503 | Group 31
+- 2:505 | Group 6
+- 2:508 | Group 5
+- 2:512 | Group 32
+- 2:514 | Group 6
+- 2:517 | Group 5
+- 2:521 | Group 28
+- 2:526 | Group 33
+- 2:530 | Group 48
+- 2:534 | Group 5
+- 2:539 | Group 41
+- 2:542 | Group 68
+- 2:545 | Group 51
+- 2:546 | Group 51
+- 2:550 | Group 67
+- 2:551 | Frame
+- 2:553 | Group 49
+- 2:558 | past shop
+- 2:560 | Group 31
+- 2:562 | Group 6
+- 2:565 | Group 5
+- 2:569 | Group 32
+- 2:571 | Group 6
+- 2:574 | Group 5
+- 2:578 | Group 28
+- 2:583 | Group 33
+- 2:587 | Group 48
+- 2:591 | Group 5
+- 2:596 | Group 41
+- 2:599 | Group 68
+- 2:602 | Group 51
+- 2:603 | Group 51
+- 2:607 | Group 67
+- 2:608 | Frame
+- 2:610 | Group 49
+- 2:616 | quiet shop
+- 2:618 | Group 31
+- 2:620 | Group 6
+- 2:623 | Group 5
+- 2:627 | Group 32
+- 2:629 | Group 6
+- 2:632 | Group 5
+- 2:636 | Group 28
+- 2:641 | Group 33
+- 2:645 | Group 48
+- 2:649 | Group 5
+- 2:654 | Group 41
+- 2:657 | Group 68
+- 2:660 | Group 51
+- 2:661 | Group 51
+- 2:665 | Group 67
+- 2:666 | Frame
+- 2:668 | Group 49
+- 2:674 | now shop
+- 2:676 | Group 31
+- 2:678 | Group 6
+- 2:681 | Group 5
+- 2:685 | Group 32
+- 2:687 | Group 6
+- 2:690 | Group 5
+- 2:694 | Group 28
+- 2:699 | Group 33
+- 2:703 | Group 48
+- 2:707 | Group 5
+- 2:712 | Group 41
+- 2:715 | Group 68
+- 2:718 | Group 51
+- 2:719 | Group 51
+- 2:723 | Group 67
+- 2:724 | Frame
+- 2:726 | Group 49
+- 2:732 | now shop
+- 2:736 | Group 5
+- 2:742 | Group 41
+- 2:745 | Frame
+- 2:747 | now shop
+- 2:751 | Group 5
+- 2:757 | Group 41
+- 2:760 | Group 67
+- 2:761 | Frame
+- 2:763 | Group 49
+- 2:766 | now shop
+- 2:770 | Group 5
+- 2:776 | Group 41
+- 2:779 | Frame
+- 2:781 | now shop
+- 2:785 | Group 5
+- 2:791 | Group 41
+- 2:794 | Group 67
+- 2:795 | Frame
+- 2:797 | Group 49
+- 2:800 | now shop
+- 2:804 | Group 5
+- 2:810 | Group 41
+- 2:813 | Frame
+- 2:815 | now shop
+- 2:819 | Group 5
+- 2:825 | Group 41
+- 2:828 | Group 67
+- 2:829 | Frame
+- 2:831 | Group 49
+- 2:834 | now shop
+- 2:838 | Group 5
+- 2:844 | Group 41
+- 2:847 | Frame
+- 2:849 | now shop
+- 2:853 | Group 5
+- 2:859 | Group 41
+- 2:862 | Group 67
+- 2:863 | Frame
+- 2:865 | Group 49
+- 2:868 | now shop
+- 2:872 | Group 5
+- 2:878 | Group 41
+- 2:881 | Frame
+- 2:883 | now shop
+- 2:887 | Group 5
+- 2:893 | Group 41
+- 2:896 | Group 67
+- 2:897 | Frame
+- 2:899 | Group 49
+- 2:902 | now shop
+- 2:906 | Group 5
+- 2:912 | Group 41
+- 2:915 | Frame
+- 2:917 | now shop
+- 2:921 | Group 5
+- 2:927 | Group 41
+- 2:930 | Group 67
+- 2:931 | Frame
+- 2:933 | Group 49
+- 2:936 | now shop
+- 2:940 | Group 5
+- 2:946 | Group 41
+- 2:949 | Group 60
+- 2:950 | Frame
+- 2:952 | now shop
+- 2:956 | Group 5
+- 2:962 | Group 41
+- 2:965 | Group 60
+- 2:966 | Frame
+- 2:968 | now shop
+- 2:972 | Group 5
+- 2:978 | Group 41
+- 2:981 | Group 67
+- 2:982 | Frame
+- 2:984 | Group 49
+- 2:987 | now shop
+- 2:991 | Group 5
+- 2:997 | Group 41
+- 2:1000 | Group 68
+- 2:1001 | Frame
+- 2:1003 | Group 49
+- 2:1006 | now shop
+- 2:1010 | Group 5
+- 2:1016 | Group 41
+- 2:1019 | Group 61
+- 2:1020 | Frame
+- 2:1022 | Group 49
+- 2:1025 | now shop
+- 2:1029 | Group 5
+- 2:1035 | Group 41
+- 2:1038 | Group 63
+- 2:1039 | Frame
+- 2:1041 | Group 49
+- 2:1044 | now shop
+- 2:1048 | Group 5
+- 2:1054 | Group 41
+- 2:1057 | Group 66
+- 2:1058 | Frame
+- 2:1060 | Group 49
+- 2:1063 | iPhone 13 &amp; 14 - 9
+- 2:1068 | Group 4
+- 2:1070 | Group 5
+- 2:1075 | Frame
+- 2:1078 | Group 41
+- 2:1082 | iPhone 13 &amp; 14 - 10
+- 2:1087 | Group 4
+- 2:1089 | Group 5
+- 2:1093 | Frame
+- 2:1097 | Group 41
+- 2:1100 | products
+- 2:1102 | Group 31
+- 2:1104 | Group 6
+- 2:1107 | Group 5
+- 2:1111 | Group 28
+- 2:1115 | Group 48
+- 2:1119 | Group 32
+- 2:1120 | Group 9
+- 2:1122 | Group 16
+- 2:1125 | Group 5
+- 2:1129 | Group 36
+- 2:1130 | Group 9
+- 2:1132 | Group 16
+- 2:1135 | Group 5
+- 2:1139 | Group 35
+- 2:1141 | Group 19
+- 2:1144 | Group 5
+- 2:1148 | Group 37
+- 2:1150 | Group 19
+- 2:1153 | Group 5
+- 2:1157 | Group 30
+- 2:1159 | Group 15
+- 2:1162 | Group 5
+- 2:1166 | Group 29
+- 2:1170 | Group 53
+- 2:1174 | Group 33
+- 2:1176 | Group 17
+- 2:1179 | Group 5
+- 2:1183 | Group 38
+- 2:1185 | Group 17
+- 2:1188 | Group 5
+- 2:1192 | Group 34
+- 2:1194 | Group 18
+- 2:1197 | Group 5
+- 2:1201 | Group 39
+- 2:1203 | Group 18
+- 2:1206 | Group 5
+- 2:1211 | Group 41
+- 2:1214 | Group 60
+- 2:1215 | Frame
+- 2:1217 | products
+- 2:1219 | Group 31
+- 2:1221 | Group 6
+- 2:1224 | Group 5
+- 2:1228 | Group 28
+- 2:1232 | Group 48
+- 2:1236 | Group 32
+- 2:1237 | Group 9
+- 2:1239 | Group 16
+- 2:1242 | Group 5
+- 2:1246 | Group 36
+- 2:1247 | Group 9
+- 2:1249 | Group 16
+- 2:1252 | Group 5
+- 2:1256 | Group 35
+- 2:1258 | Group 19
+- 2:1261 | Group 5
+- 2:1265 | Group 37
+- 2:1267 | Group 19
+- 2:1270 | Group 5
+- 2:1274 | Group 30
+- 2:1276 | Group 15
+- 2:1279 | Group 5
+- 2:1283 | Group 29
+- 2:1288 | Group 52
+- 2:1291 | Group 51
+- 2:1292 | Group 51
+- 2:1296 | Group 33
+- 2:1298 | Group 17
+- 2:1301 | Group 5
+- 2:1305 | Group 38
+- 2:1307 | Group 17
+- 2:1310 | Group 5
+- 2:1314 | Group 34
+- 2:1316 | Group 18
+- 2:1319 | Group 5
+- 2:1323 | Group 39
+- 2:1325 | Group 18
+- 2:1328 | Group 5
+- 2:1333 | Group 41
+- 2:1336 | Group 61
+- 2:1337 | Frame
+- 2:1339 | Group 49
+- 2:1342 | products
+- 2:1344 | Group 31
+- 2:1346 | Group 6
+- 2:1349 | Group 5
+- 2:1353 | Group 28
+- 2:1357 | Group 51
+- 2:1360 | Group 51
+- 2:1361 | Group 51
+- 2:1366 | Group 32
+- 2:1367 | Group 9
+- 2:1369 | Group 16
+- 2:1372 | Group 5
+- 2:1376 | Group 36
+- 2:1377 | Group 9
+- 2:1379 | Group 16
+- 2:1382 | Group 5
+- 2:1386 | Group 35
+- 2:1388 | Group 19
+- 2:1391 | Group 5
+- 2:1395 | Group 37
+- 2:1397 | Group 19
+- 2:1400 | Group 5
+- 2:1404 | Group 30
+- 2:1406 | Group 15
+- 2:1409 | Group 5
+- 2:1413 | Group 29
+- 2:1417 | Group 54
+- 2:1421 | Group 33
+- 2:1423 | Group 17
+- 2:1426 | Group 5
+- 2:1430 | Group 38
+- 2:1432 | Group 17
+- 2:1435 | Group 5
+- 2:1439 | Group 34
+- 2:1441 | Group 18
+- 2:1444 | Group 5
+- 2:1448 | Group 39
+- 2:1450 | Group 18
+- 2:1453 | Group 5
+- 2:1458 | Group 41
+- 2:1461 | Group 60
+- 2:1462 | Frame
+- 2:1464 | Group 49
+- 2:1467 | products
+- 2:1469 | Group 31
+- 2:1471 | Group 6
+- 2:1474 | Group 5
+- 2:1478 | Group 28
+- 2:1483 | Group 52
+- 2:1486 | Group 51
+- 2:1487 | Group 51
+- 2:1491 | Group 32
+- 2:1492 | Group 9
+- 2:1494 | Group 16
+- 2:1497 | Group 5
+- 2:1501 | Group 36
+- 2:1502 | Group 9
+- 2:1504 | Group 16
+- 2:1507 | Group 5
+- 2:1511 | Group 35
+- 2:1513 | Group 19
+- 2:1516 | Group 5
+- 2:1520 | Group 37
+- 2:1522 | Group 19
+- 2:1525 | Group 5
+- 2:1529 | Group 30
+- 2:1531 | Group 15
+- 2:1534 | Group 5
+- 2:1538 | Group 29
+- 2:1543 | Group 52
+- 2:1546 | Group 51
+- 2:1547 | Group 51
+- 2:1551 | Group 33
+- 2:1553 | Group 17
+- 2:1556 | Group 5
+- 2:1560 | Group 38
+- 2:1562 | Group 17
+- 2:1565 | Group 5
+- 2:1569 | Group 34
+- 2:1571 | Group 18
+- 2:1574 | Group 5
+- 2:1578 | Group 39
+- 2:1580 | Group 18
+- 2:1583 | Group 5
+- 2:1588 | Group 41
+- 2:1591 | Group 63
+- 2:1592 | Frame
+- 2:1594 | Group 49
+- 2:1597 | products
+- 2:1599 | Group 31
+- 2:1601 | Group 6
+- 2:1604 | Group 5
+- 2:1608 | Group 28
+- 2:1613 | Group 52
+- 2:1616 | Group 51
+- 2:1617 | Group 51
+- 2:1621 | Group 32
+- 2:1622 | Group 9
+- 2:1624 | Group 16
+- 2:1627 | Group 5
+- 2:1631 | Group 36
+- 2:1632 | Group 9
+- 2:1634 | Group 16
+- 2:1637 | Group 5
+- 2:1641 | Group 35
+- 2:1643 | Group 19
+- 2:1646 | Group 5
+- 2:1650 | Group 37
+- 2:1652 | Group 19
+- 2:1655 | Group 5
+- 2:1659 | Group 30
+- 2:1661 | Group 15
+- 2:1664 | Group 5
+- 2:1668 | Group 29
+- 2:1672 | Group 55
+- 2:1676 | Group 33
+- 2:1678 | Group 17
+- 2:1681 | Group 5
+- 2:1685 | Group 38
+- 2:1687 | Group 17
+- 2:1690 | Group 5
+- 2:1694 | Group 34
+- 2:1696 | Group 18
+- 2:1699 | Group 5
+- 2:1703 | Group 39
+- 2:1705 | Group 18
+- 2:1708 | Group 5
+- 2:1713 | Group 41
+- 2:1716 | Group 68
+- 2:1717 | Frame
+- 2:1719 | Group 49
+- 2:1722 | products
+- 2:1724 | Group 31
+- 2:1726 | Group 6
+- 2:1729 | Group 5
+- 2:1733 | Group 28
+- 2:1738 | Group 52
+- 2:1741 | Group 51
+- 2:1742 | Group 51
+- 2:1746 | Group 32
+- 2:1747 | Group 9
+- 2:1749 | Group 16
+- 2:1752 | Group 5
+- 2:1756 | Group 36
+- 2:1757 | Group 9
+- 2:1759 | Group 16
+- 2:1762 | Group 5
+- 2:1766 | Group 35
+- 2:1768 | Group 19
+- 2:1771 | Group 5
+- 2:1775 | Group 37
+- 2:1777 | Group 19
+- 2:1780 | Group 5
+- 2:1784 | Group 30
+- 2:1786 | Group 15
+- 2:1789 | Group 5
+- 2:1793 | Group 29
+- 2:1798 | Group 52
+- 2:1801 | Group 51
+- 2:1802 | Group 51
+- 2:1806 | Group 33
+- 2:1808 | Group 17
+- 2:1811 | Group 5
+- 2:1815 | Group 38
+- 2:1817 | Group 17
+- 2:1820 | Group 5
+- 2:1824 | Group 34
+- 2:1826 | Group 18
+- 2:1829 | Group 5
+- 2:1833 | Group 39
+- 2:1835 | Group 18
+- 2:1838 | Group 5
+- 2:1843 | Group 41
+- 2:1846 | Group 66
+- 2:1847 | Frame
+- 2:1849 | Group 49
+- 2:1852 | Component 2
+- 2:1913 | cart 1
+- 2:1916 | Group 59
+- 2:1921 | Group 5
+- 2:1923 | Group 5
+- 2:1926 | Group 60
+- 2:1927 | Frame
+- 2:1929 | Group 49
+- 2:1932 | products
+- 2:1935 | Group 59
+- 2:1940 | Group 5
+- 2:1942 | Group 60
+- 2:1945 | Group 68
+- 2:1946 | Frame
+- 2:1948 | Group 49
+- 2:1951 | products
+- 2:1956 | Group 62
+- 2:1957 | Group 59
+- 2:1960 | Group 5
+- 2:1962 | Group 63
+- 2:1965 | Group 61
+- 2:1966 | Frame
+- 2:1968 | Group 49
+- 2:1971 | products
+- 2:1977 | Group 5
+- 2:1979 | Group 63
+- 2:1983 | Group 62
+- 2:1984 | Group 59
+- 2:1987 | Group 64
+- 2:1988 | Group 59
+- 2:1991 | Group 65
+- 2:1994 | Group 66
+- 2:1995 | Frame
+- 2:1997 | Group 49
+- 2:2000 | products
+- 2:2006 | Group 5
+- 2:2008 | Group 63
+- 2:2012 | Group 62
+- 2:2013 | Group 59
+- 2:2016 | Group 64
+- 2:2017 | Group 59
+- 2:2020 | Group 65
+- 2:2023 | Group 66
+- 2:2024 | Frame
+- 2:2026 | Group 49
+- 2:2029 | EMPTY CART
+- 2:2032 | Group 60
+- 2:2033 | Frame
+- 2:2035 | now shop
+- 2:2043 | Group 65
+- 2:2048 | Group 67
+- 2:2051 | Group 66
+- 2:2064 | Group 41
+- 2:2067 | now shop
+- 2:2069 | Group 70
+- 2:2074 | Group 67
+- 2:2078 | Group 60
+- 2:2079 | Frame
+- 2:2081 | Frame
+- 2:2083 | Frame 1
+- 2:2084 | Group 71
+
+## Components
+- (none)
+
+## Instances
+- 2:29 | Component 2
+- 2:1073 | Component 1
+- 2:1081 | Component 3
+- 2:1096 | Component 3

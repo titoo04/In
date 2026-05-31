@@ -1,0 +1,8 @@
+@import "../tokens/colors.css";
+@import "../tokens/typography.css";
+@import "../tokens/spacing.css";
+
+:root {
+  --page-max-width: 72rem;
+  --section-y: 4.5rem;
+}

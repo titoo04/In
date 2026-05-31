@@ -1,4 +1,6 @@
 @import "tailwindcss";
+@import "../styles/tokens.css";
+@import "../styles/components.css";
 
 :root {
   --background: #ffffff;
@@ -22,5 +24,115 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-body), Arial, Helvetica, sans-serif;
+}
+
+button,
+input[type="button"],
+input[type="submit"],
+input[type="reset"],
+[role="button"],
+.state-pill {
+  font-family: var(--font-display), "Helvetica Neue", Arial, sans-serif;
+}
+
+.splash-active header,
+.splash-active footer {
+  display: none;
+}
+
+html.splash-active,
+body.splash-active {
+  height: 100%;
+  overflow: hidden;
+}
+
+.journey-active header,
+.journey-active footer {
+  display: none;
+}
+
+.journey-active {
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+.journey-flow {
+  scroll-snap-type: y mandatory;
+}
+
+.journey-panel {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  scroll-snap-align: start;
+  scroll-snap-stop: always;
+  opacity: 1;
+}
+
+.journey-panel.is-active {
+  transform: none;
+}
+
+.state-pill {
+  position: relative;
+  overflow: hidden;
+  border-radius: 55%;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  text-transform: uppercase;
+}
+
+.state-pill::before {
+  content: "";
+  position: absolute;
+  inset: -30%;
+  background-image: var(--state-bg);
+  background-size: 150% 100%;
+  background-position: 0% center;
+  transform: scale(1.2);
+}
+
+.state-pill::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    135deg,
+    rgba(0, 0, 0, 0.55),
+    rgba(0, 0, 0, 0.35)
+  );
+}
+
+.splash-fade {
+  animation: splash-fade 0.6s ease forwards 2s;
+}
+
+.splash-screen {
+  position: fixed;
+  inset: 0;
+  z-index: 50;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #ffffff;
+}
+
+.splash-screen.is-fading {
+  animation: splash-fade 0.6s ease forwards;
+}
+
+@keyframes splash-fade {
+  to {
+    opacity: 0;
+    transform: translateY(8px);
+  }
+}
+@utility font-script {
+  font-family: var(--font-script);
+}
+.w-70{
+  width: 70%;
+}
+.pillar{
+  border-radius: 55%;
 }
