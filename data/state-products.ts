@@ -58,16 +58,35 @@ export const stateProducts: StateProduct[] = [
   },
 ];
 
+const stateProductsByIdLookup = stateProducts.reduce(
+  (acc, product) => {
+    acc[product.id] = product;
+    return acc;
+  },
+  {} as Record<string, StateProduct>,
+);
+
+const chapterProductIdsByState: Record<string, string> = {
+  noise: "the-noise",
+  self: "the-self",
+  others: "the-others",
+  past: "the-past",
+  quiet: "the-quiet",
+  now: "the-now",
+};
+
 export const stateProductCollections: StateProductCollection[] = [
   {
     slug: "noise",
     title: "THE NOISE",
-    description:
-      `Thoughts are overlapping,
+    description: `Thoughts are overlapping,
        jumping from one thing to     another, and it feels hard to 
        slow down.`,
     heroImage: "/assets/images/noiseHero.png",
-    products: stateProducts,
+    products: [
+      stateProductsByIdLookup["in-full"],
+      stateProductsByIdLookup[chapterProductIdsByState.noise],
+    ],
   },
   {
     slug: "self",
@@ -75,7 +94,10 @@ export const stateProductCollections: StateProductCollection[] = [
     description:
       "You have started to notice your thoughts. You are more aware of what is happening in your mind, even if it is still unclear.",
     heroImage: "/assets/images/selfHero.png",
-    products: stateProducts,
+    products: [
+      stateProductsByIdLookup["in-full"],
+      stateProductsByIdLookup[chapterProductIdsByState.self],
+    ],
   },
   {
     slug: "others",
@@ -83,7 +105,10 @@ export const stateProductCollections: StateProductCollection[] = [
     description:
       "Some of your thoughts do not fully feel like yours. They come from people around you or expectations you have absorbed.",
     heroImage: "/assets/images/othersHero.png",
-    products: stateProducts,
+    products: [
+      stateProductsByIdLookup["in-full"],
+      stateProductsByIdLookup[chapterProductIdsByState.others],
+    ],
   },
   {
     slug: "past",
@@ -91,7 +116,10 @@ export const stateProductCollections: StateProductCollection[] = [
     description:
       "Certain thoughts keep coming back. They are connected to things you have experienced before.",
     heroImage: "/assets/images/pastHero.png",
-    products: stateProducts,
+    products: [
+      stateProductsByIdLookup["in-full"],
+      stateProductsByIdLookup[chapterProductIdsByState.past],
+    ],
   },
   {
     slug: "quiet",
@@ -99,17 +127,22 @@ export const stateProductCollections: StateProductCollection[] = [
     description:
       "Things feel a bit calmer. Your thoughts are still there, but they are not as overwhelming as before.",
     heroImage: "/assets/images/quietHero.png",
-    products: stateProducts,
+    products: [
+      stateProductsByIdLookup["in-full"],
+      stateProductsByIdLookup[chapterProductIdsByState.quiet],
+    ],
   },
   {
     slug: "now",
     title: "THE NOW",
-    description:
-      `You feel present.
+    description: `You feel present.
        You are aware of what is happening
         without getting pulled into it.`,
     heroImage: "/assets/images/nowHero.png",
-    products: stateProducts,
+    products: [
+      stateProductsByIdLookup["in-full"],
+      stateProductsByIdLookup[chapterProductIdsByState.now],
+    ],
   },
 ];
 
@@ -118,7 +151,7 @@ export const stateProductsBySlug = stateProductCollections.reduce(
     acc[collection.slug] = collection;
     return acc;
   },
-  {} as Record<string, StateProductCollection>
+  {} as Record<string, StateProductCollection>,
 );
 
 export const stateProductsById = stateProducts.reduce(
@@ -126,5 +159,5 @@ export const stateProductsById = stateProducts.reduce(
     acc[product.id] = product;
     return acc;
   },
-  {} as Record<string, StateProduct>
+  {} as Record<string, StateProduct>,
 );

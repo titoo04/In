@@ -126,16 +126,13 @@ export default function CheckoutPage() {
               <path d="M5 12l4 4 10-10" />
             </svg>
           </div>
-          <p className="text-sm uppercase font-lightthin tracking-[0.3em]">
+          <p className="text-sm uppercase font-lightthin tracking-[0.1em]">
             Order placed <br /> successfully!
           </p>
         </div>
 
         <div className="flex flex-col  gap-4">
-          <p className="font-script text-5xl text-white">You&apos;re in</p>
-            <p dir="rtl" className="text-sm text-white/90 self-end  --font-display">
-              كذا بدات الرحلة
-            </p>
+         <img src="/assets/images/you'reIn.png" alt="" />
         </div>
 
         <div className="flex flex-col items-center gap-3">

@@ -118,80 +118,94 @@ export default function CartPage() {
         </Card>
       ) : (
         <div className="flex flex-col gap-6">
-          {lineItems.map((item) => (
-            <Card
-              key={item.id}
-              className="flex flex-col gap-4 border border-zinc-100 p-4 sm:flex-row sm:items-center"
+          {lineItems.map((item) =>
+            (() => {
+              const copyLabel = item.quantity === 1 ? "copy" : "copies";
+
+              return (
+                <Card
+                  key={item.id}
+                  className="flex  gap-4 p-4 sm:flex-row sm:items-center"
+                >
+                  <div className="flex flex-1 flex-col gap-3">
+                    <div className="flex flex-col gap-1">
+                      <Link
+                        className="text-lg font-semibold text-zinc-900"
+                        href={`/products/${item.id}`}
+                      >
+                        {item.name}
+                      </Link>
+                      <p className="text-sm text-zinc-600">{item.price}</p>
+                      <div className="flex gap-5">
+
+                        <button
+                          className="text-sm font-semibold underline  tracking-[0.1em]  transition-colors hover:text-zinc-900"
+                          type="button"
+                          onClick={() => removeCartItem(item.id)}
+                          >
+                          Remove
+                        </button>
+                      <p className="text-sm font-semibold text-[#D86A5A]">
+                        {item.quantity} {copyLabel}
+                      </p>
+                          </div>
+                    </div>
+                    <div className="flex flex-wrap items-center gap-3">
+                      {/* <div className="flex items-center gap-3 rounded-full border border-zinc-200 px-3 py-2">
+                        <button
+                          aria-label={`Decrease ${item.name}`}
+                          className="text-sm font-semibold text-zinc-900"
+                          type="button"
+                          onClick={() => addCartItem(item.id, -1)}
+                        >
+                          -
+                        </button>
+                        <span className="min-w-[2ch] text-center text-sm font-semibold text-zinc-900">
+                          {item.quantity}
+                        </span>
+                        <button
+                          aria-label={`Increase ${item.name}`}
+                          className="text-sm font-semibold text-zinc-900"
+                          type="button"
+                          onClick={() => addCartItem(item.id, 1)}
+                          >
+                          +
+                        </button>
+                      </div> */}
+                    </div>
+                  </div>
+                  <Link
+                    className="flex h-20 w-20 shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-zinc-100 sm:ml-4"
+                    href={`/products/${item.id}`}
+                  >
+                    {item.image ? (
+                      <img
+                        alt={item.name}
+                        className="h-full w-full object-cover"
+                        src={item.image}
+                      />
+                    ) : (
+                      <span className="text-[10px] uppercase tracking-[0.2em] text-zinc-500">
+                        No image
+                      </span>
+                    )}
+                  </Link>
+                </Card>
+              );
+            })(),
+          )}
+          <div className="flex flex-col items-center gap-4">
+            <Link
+              className="pillar border-0 bg-[#D3E0FF] px-5 py-1 text-sm font-bold uppercase tracking-[0.1em] text-black"
+              href="/checkout"
             >
-              <Link
-                className="flex h-20 w-20 items-center justify-center overflow-hidden rounded-2xl bg-zinc-100"
-                href={`/products/${item.id}`}
-              >
-                {item.image ? (
-                  <img
-                    alt={item.name}
-                    className="h-full w-full object-cover"
-                    src={item.image}
-                  />
-                ) : (
-                  <span className="text-[10px] uppercase tracking-[0.2em] text-zinc-500">
-                    No image
-                  </span>
-                )}
-              </Link>
-              <div className="flex flex-1 flex-col gap-1">
-                <Link
-                  className="text-lg font-semibold text-zinc-900"
-                  href={`/products/${item.id}`}
-                >
-                  {item.name}
-                </Link>
-                <p className="text-sm text-zinc-600">{item.price}</p>
-              </div>
-              <div className="flex flex-wrap items-center gap-3 sm:justify-end">
-                <div className="flex items-center gap-3 rounded-full border border-zinc-200 px-3 py-2">
-                  <button
-                    aria-label={`Decrease ${item.name}`}
-                    className="text-sm font-semibold text-zinc-900"
-                    type="button"
-                    onClick={() => addCartItem(item.id, -1)}
-                  >
-                    -
-                  </button>
-                  <span className="min-w-[2ch] text-center text-sm font-semibold text-zinc-900">
-                    {item.quantity}
-                  </span>
-                  <button
-                    aria-label={`Increase ${item.name}`}
-                    className="text-sm font-semibold text-zinc-900"
-                    type="button"
-                    onClick={() => addCartItem(item.id, 1)}
-                  >
-                    +
-                  </button>
-                </div>
-                <button
-                  className="text-xs font-semibold uppercase tracking-[0.2em] text-zinc-500 transition-colors hover:text-zinc-900"
-                  type="button"
-                  onClick={() => removeCartItem(item.id)}
-                >
-                  Remove
-                </button>
-              </div>
-            </Card>
-          ))}
-          <div className="flex flex-wrap items-center justify-between gap-4">
+              Checkout
+            </Link>
             <Link
               className="text-sm font-semibold text-zinc-600 transition-colors hover:text-zinc-900"
               href="/products"
             >
               Continue shopping
-            </Link>
-            <Link
-              className="inline-flex items-center justify-center rounded-full bg-black px-6 py-3 text-sm font-semibold text-white transition-colors hover:bg-zinc-800"
-              href="/checkout"
-            >
-              Proceed to checkout
             </Link>
           </div>
         </div>

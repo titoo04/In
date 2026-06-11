@@ -4,7 +4,7 @@ export const prototypeAssets = {
   introBackground:
     "https://www.figma.com/api/mcp/asset/3230236a-a84c-454e-8f86-955a50c76fd2",
   noiseBackground:
-    "https://www.figma.com/api/mcp/asset/72edbfbe-b454-4298-bf82-1c616bc69004",
+  "/assets/images/TheNoiseBg.png",
   selfBackground:
   "/assets/images/TheSelfBg.png",
   pastBackground:
@@ -14,7 +14,7 @@ export const prototypeAssets = {
   nowBackground:
   "/assets/images/TheNowBg.png",
   othersBackground:
-    "https://www.figma.com/api/mcp/asset/cb5fda18-12db-464d-9288-205aa8bc1fc0",
+    "/assets/images/TheOthersBg.png",
   scrollArrow:
     "https://www.figma.com/api/mcp/asset/38978f63-f32f-47c7-86b5-0b9f0402bae5",
 };
