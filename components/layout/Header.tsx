@@ -25,7 +25,7 @@ export default function Header() {
           className="relative flex h-10 w-10 items-center justify-center self-end text-zinc-900"
           href="/cart"
         >
-          <img src="/assets/icons/vector.png" alt="" />
+          <img src="/assets/icons/cartIcon.png" alt="" />
           {cartCount > 0 && (
             <span className="absolute -right-1 -top-1 flex h-5 min-w-5 items-center justify-center rounded-full bg-[#D86A5A] px-1 text-[10px] font-semibold leading-none text-white shadow-sm">
               {cartCount}
