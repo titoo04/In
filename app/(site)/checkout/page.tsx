@@ -132,7 +132,7 @@ export default function CheckoutPage() {
         </div>
 
         <div className="flex flex-col  gap-4">
-          <img src="/assets/images/you'reIn.png" alt="" />
+          <img src="/assets/images/youAreIn.png" alt="" />
         </div>
 
         <div className="flex flex-col items-center gap-3">
