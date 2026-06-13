@@ -247,7 +247,7 @@ export default function Home() {
               ))}
               <Link
                 className="border-zinc-200 text-xl underline font-script line-height-[1.5] md:text-2xl"
-                href="/shop/noise"
+                href="/shop"
               >
                 The shop
               </Link>

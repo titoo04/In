@@ -71,6 +71,26 @@ export const stateProducts: StateProduct[] = [
     image: "/assets/images/theJournal.png",
   }
 ];
+export const mainProducts: StateProduct[] = [
+  {
+    id: "in-full",
+    name: "IN (Full Book)",
+    price: "1100 EGP",
+    image: "/assets/images/fullBook.png",
+  },
+  {
+    id: "Bookmark",
+    name: "BOOKMARK",
+    price: "40 EGP",
+    image: "/assets/images/Bookmark.png",
+  },
+   {
+    id: "the journal",
+    name: "THE JOURNAL",
+    price: "150 EGP",
+    image: "/assets/images/theJournal.png",
+  }
+];
 
 const stateProductsByIdLookup = stateProducts.reduce(
   (acc, product) => {
@@ -113,6 +133,8 @@ export const stateProductCollections: StateProductCollection[] = [
     products: [
       stateProductsByIdLookup["in-full"],
       stateProductsByIdLookup[chapterProductIdsByState.self],
+      stateProductsByIdLookup["the journal"],
+      stateProductsByIdLookup["Bookmark"],
     ],
   },
   {
@@ -124,6 +146,8 @@ export const stateProductCollections: StateProductCollection[] = [
     products: [
       stateProductsByIdLookup["in-full"],
       stateProductsByIdLookup[chapterProductIdsByState.others],
+      stateProductsByIdLookup["the journal"],
+      stateProductsByIdLookup["Bookmark"],
     ],
   },
   {
@@ -135,6 +159,8 @@ export const stateProductCollections: StateProductCollection[] = [
     products: [
       stateProductsByIdLookup["in-full"],
       stateProductsByIdLookup[chapterProductIdsByState.past],
+      stateProductsByIdLookup["the journal"],
+      stateProductsByIdLookup["Bookmark"],
     ],
   },
   {
@@ -146,6 +172,8 @@ export const stateProductCollections: StateProductCollection[] = [
     products: [
       stateProductsByIdLookup["in-full"],
       stateProductsByIdLookup[chapterProductIdsByState.quiet],
+      stateProductsByIdLookup["the journal"],
+      stateProductsByIdLookup["Bookmark"],
     ],
   },
   {
@@ -158,6 +186,8 @@ export const stateProductCollections: StateProductCollection[] = [
     products: [
       stateProductsByIdLookup["in-full"],
       stateProductsByIdLookup[chapterProductIdsByState.now],
+      stateProductsByIdLookup["the journal"],
+      stateProductsByIdLookup["Bookmark"],
     ],
   },
 ];

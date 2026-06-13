@@ -3,10 +3,10 @@
 import { useState } from "react";
 
 import StateProductCard from "@/components/cart/StateProductCard";
-import { stateProducts } from "@/data/state-products";
+import { mainProducts } from "@/data/state-products";
 import Link from "next/link";
 
-const slides = stateProducts;
+const slides = mainProducts;
 
 export default function ShopLandingPage() {
   const [activeIndex, setActiveIndex] = useState(0);
