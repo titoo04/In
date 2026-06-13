@@ -45,9 +45,7 @@ export default function StatePage({ params }: PageProps) {
           <h1 className="text-4xl font-semibold tracking-[0.2em] sm:text-5xl">
             {state.title}
           </h1>
-          <p className="max-w-2xl text-base text-white/80">
-            {state.subtitle}
-          </p>
+          <p className="max-w-2xl text-base text-white/80">{state.subtitle}</p>
           <div className="flex flex-wrap gap-4">
             <Link
               className="inline-flex items-center justify-center rounded-full bg-white px-6 py-3 text-sm font-semibold text-black transition-colors hover:bg-zinc-100"

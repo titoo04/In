@@ -110,7 +110,7 @@ export default function CheckoutPage() {
 
   if (orderPlaced) {
     return (
-      <section className="flex min-h-[calc(100vh-96px)] flex-col items-center justify-around bg-black px-6 py-10 text-center text-white">
+      <section className="flex min-h-[calc(100vh-96px)] flex-col items-center justify-around bg-black px-6 py-10 text-center text-white md:px-10 md:py-12">
         <div className="flex flex-col items-center gap-4">
           <div className="flex h-12 w-12 items-center justify-center rounded-full bg-[#D86A5A]">
             <svg
@@ -132,7 +132,7 @@ export default function CheckoutPage() {
         </div>
 
         <div className="flex flex-col  gap-4">
-         <img src="/assets/images/you'reIn.png" alt="" />
+          <img src="/assets/images/you'reIn.png" alt="" />
         </div>
 
         <div className="flex flex-col items-center gap-3">
@@ -151,7 +151,7 @@ export default function CheckoutPage() {
   }
 
   return (
-    <section className="mx-auto flex w-full max-w-sm flex-col gap-10 px-6 py-12">
+    <section className="mx-auto flex w-full max-w-md flex-col gap-10 px-6 py-12 md:max-w-2xl md:px-10 lg:max-w-3xl">
       <div className="flex flex-col gap-6">
         <div className="flex flex-col gap-3">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-black">
@@ -163,7 +163,7 @@ export default function CheckoutPage() {
             </p>
             <div className="relative">
               <select
-                className="w-full appearance-none bg-transparent text-lg text-zinc-900"
+                className="w-full appearance-none bg-transparent text-lg text-zinc-900 md:text-xl"
                 value={city}
                 onChange={(event) => setCity(event.target.value)}
               >
@@ -178,9 +178,7 @@ export default function CheckoutPage() {
               </span>
             </div>
             <div className="h-px w-full bg-black/80" />
-            <p className="text-[11px] text-zinc-500">
-              Delivery To {city}: 1-2
-            </p>
+            <p className="text-[11px] text-zinc-500">Delivery To {city}: 1-2</p>
           </div>
         </div>
       </div>
@@ -191,7 +189,7 @@ export default function CheckoutPage() {
         </p>
         <div className="flex flex-col items-center gap-4">
           <button
-            className={`pillar w-full max-w-[16rem] px-6 py-4 text-sm uppercase tracking-[0.12em] transition-colors ${
+            className={`pillar w-full max-w-[20rem] px-6 py-4 text-sm uppercase tracking-[0.12em] transition-colors md:max-w-[24rem] ${
               paymentMethod === "cod"
                 ? "bg-[#D5E0FF] text-black"
                 : "border border-black/70 text-black/80"
@@ -202,7 +200,7 @@ export default function CheckoutPage() {
             Cash on delivery
           </button>
           <button
-            className={`pillar w-full max-w-[16rem] px-6 py-4 text-sm uppercase tracking-[0.12em] transition-colors ${
+            className={`pillar w-full max-w-[20rem] px-6 py-4 text-sm uppercase tracking-[0.12em] transition-colors md:max-w-[24rem] ${
               paymentMethod === "card"
                 ? "bg-[#D5E0FF] text-black"
                 : "border border-black/90 text-black/80"
@@ -243,7 +241,7 @@ export default function CheckoutPage() {
       </div>
 
       <button
-        className="pillar mx-auto w-full max-w-[17rem] bg-[#D86A5A] py-3 text-sm uppercase tracking-[0.2em] text-white transition-colors hover:bg-[#c45b4c]"
+        className="pillar mx-auto w-full max-w-[20rem] bg-[#D86A5A] py-3 text-sm uppercase tracking-[0.2em] text-white transition-colors hover:bg-[#c45b4c] md:max-w-[24rem]"
         type="button"
         onClick={() => {
           clearCartItems();
@@ -255,7 +253,7 @@ export default function CheckoutPage() {
 
       <Link
         className="flex items-center gap-2 text-xs font-semibold uppercase tracking-[0.2em] text-zinc-700"
-        href="/cart"
+        href="/where-are-you-now"
       >
         <span className="text-lg leading-none">&lt;</span>
         Back

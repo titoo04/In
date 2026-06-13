@@ -1,3 +1,5 @@
+import { stat } from "fs";
+
 export type StateProduct = {
   id: string;
   name: string;
@@ -56,6 +58,18 @@ export const stateProducts: StateProduct[] = [
     price: "300 EGP",
     image: "/assets/images/nowBook.png",
   },
+  {
+    id: "Bookmark",
+    name: "BOOKMARK",
+    price: "40 EGP",
+    image: "/assets/images/Bookmark.png",
+  },
+   {
+    id: "the journal",
+    name: "THE JOURNAL",
+    price: "150 EGP",
+    image: "/assets/images/theJournal.png",
+  }
 ];
 
 const stateProductsByIdLookup = stateProducts.reduce(
@@ -86,6 +100,8 @@ export const stateProductCollections: StateProductCollection[] = [
     products: [
       stateProductsByIdLookup["in-full"],
       stateProductsByIdLookup[chapterProductIdsByState.noise],
+      stateProductsByIdLookup["the journal"],
+      stateProductsByIdLookup["Bookmark"],
     ],
   },
   {

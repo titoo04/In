@@ -64,10 +64,20 @@ body.splash-active {
 .journey-panel {
   position: sticky;
   top: 0;
-  height: 100vh;
+  height: 100svh;
   scroll-snap-align: start;
   scroll-snap-stop: always;
   opacity: 1;
+}
+
+@media (min-width: 768px) {
+  .journey-panel {
+    height: 100dvh;
+  }
+
+  .w-70 {
+    width: min(58vw, 28rem);
+  }
 }
 
 .journey-panel.is-active {
@@ -96,11 +106,7 @@ body.splash-active {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(
-    135deg,
-    rgba(0, 0, 0, 0.55),
-    rgba(0, 0, 0, 0.35)
-  );
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.35));
 }
 
 .splash-fade {
@@ -130,9 +136,15 @@ body.splash-active {
 @utility font-script {
   font-family: var(--font-script);
 }
-.w-70{
-  width: 70%;
+
+.w-70 {
+  width: min(78vw, 22rem);
 }
-.pillar{
+
+.pillar {
   border-radius: 55%;
+}
+
+.bg-orange {
+  background-color: #d86a5a;
 }

@@ -10,7 +10,7 @@ export default function Header() {
 
   return (
     <header className="bg-white">
-      <div className="mx-auto flex w-full max-w-5xl items-center justify-between px-6 py-2">
+      <div className="mx-auto flex w-full max-w-5xl items-center justify-between px-4 py-2 md:px-6 md:py-3">
         <Link href="/" className="flex items-center">
           <Image
             src="/assets/images/logo.png"
@@ -22,7 +22,7 @@ export default function Header() {
         </Link>
         <Link
           aria-label={`Cart (${cartCount} items)`}
-          className="relative flex h-10 w-10 items-center justify-center self-end text-zinc-900"
+          className="relative flex h-10 w-10 items-center justify-center self-end text-zinc-900 md:h-12 md:w-12"
           href="/cart"
         >
           <img src="/assets/icons/cartIcon.png" alt="" />

@@ -62,7 +62,7 @@ export default function Home() {
 
   useEffect(() => {
     const panels = Array.from(
-      document.querySelectorAll<HTMLElement>("[data-journey-panel]")
+      document.querySelectorAll<HTMLElement>("[data-journey-panel]"),
     );
 
     if (panels.length === 0 || typeof IntersectionObserver === "undefined") {
@@ -81,7 +81,7 @@ export default function Home() {
           setActiveIndex(index);
         });
       },
-      { threshold: 0.6 }
+      { threshold: 0.6 },
     );
 
     panels.forEach((panel) => observer.observe(panel));
@@ -105,7 +105,7 @@ export default function Home() {
           document.cookie = `${JOURNEY_COOKIE}=1; path=/; max-age=31536000; samesite=lax`;
         }
       },
-      { threshold: 0.3 }
+      { threshold: 0.3 },
     );
 
     observer.observe(endRef.current);
@@ -169,10 +169,10 @@ export default function Home() {
             </video>
           )}
           <div className="absolute inset-0 bg-black/20" />
-          <div className="relative z-10 flex min-h-screen items-center justify-center px-8">
+          <div className="relative z-10 flex min-h-screen items-center justify-center px-6 md:px-10 lg:px-8">
             <img
               alt=""
-              className="w-full max-w-md"
+              className="w-full max-w-sm md:max-w-2xl lg:max-w-md"
               src="/assets/images/TextBg.png"
             />
           </div>
@@ -209,6 +209,7 @@ export default function Home() {
       ))}
 
       <section
+        id="where-are-you-now"
         ref={endRef}
         className={`journey-panel ${
           activeIndex === states.length + 1 ? "is-active" : ""
@@ -219,18 +220,18 @@ export default function Home() {
       >
         <div className="relative min-h-screen overflow-hidden bg-white">
           <div className="relative z-10 mx-auto flex min-h-screen max-w-3xl flex-col items-center justify-center gap-6 px-6 text-center">
-            <p className="text-[10px] uppercase tracking-[0.35em] text-zinc-500">
+            <p className="text-[10px] uppercase tracking-[0.35em] text-zinc-500 md:text-xs">
               Final step
             </p>
-            <h2 className="font-script text-5xl font-semibold text-zinc-900 sm:text-4xl">
+            <h2 className="font-script text-4xl font-semibold text-zinc-900 sm:text-4xl md:text-5xl">
               Where are you now?
             </h2>
-          
-            <div className="mt-2 flex w-70 flex-col items-center gap-5">
+
+            <div className="mt-2 flex w-70 flex-col items-center gap-4 md:gap-5">
               {states.map((state) => (
                 <Link
                   key={state.slug}
-                  className="state-pill w-full px-6 py-4 text-center text-2xl font-lightthin"
+                  className="state-pill w-full px-5 py-4 text-center text-xl font-lightthin md:px-6 md:py-5 md:text-2xl"
                   href={`/shop/${state.slug}`}
                   onClick={markJourneyComplete}
                   style={
@@ -239,12 +240,17 @@ export default function Home() {
                     } as CSSProperties
                   }
                 >
-                  <span className="relative z-10 text-white">{state.title}</span>
+                  <span className="relative z-10 text-white">
+                    {state.title}
+                  </span>
                 </Link>
               ))}
-                <Link className=" border-zinc-200 text-2xl underline font-script line-height-[1.5]" href="/shop/noise">
-            The shop
-          </Link>
+              <Link
+                className="border-zinc-200 text-xl underline font-script line-height-[1.5] md:text-2xl"
+                href="/shop/noise"
+              >
+                The shop
+              </Link>
             </div>
             {!journeyComplete && <ScrollHint tone="dark" />}
           </div>

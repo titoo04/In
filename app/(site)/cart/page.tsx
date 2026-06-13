@@ -72,13 +72,13 @@ export default function CartPage() {
   const totalCount = items.reduce((sum, item) => sum + item.quantity, 0);
 
   return (
-    <section className="mx-auto flex w-full max-w-5xl flex-col gap-8 px-6 py-16">
+    <section className="mx-auto flex w-full max-w-5xl flex-col gap-8 px-4 py-12 md:px-6 md:py-16">
       <header className="flex flex-col gap-2">
         <p className="text-xs uppercase tracking-[0.3em] text-zinc-500">
           Your cart
         </p>
         <div className="flex flex-wrap items-center justify-between gap-4">
-          <h1 className="text-3xl font-semibold text-zinc-900">
+          <h1 className="text-2xl font-semibold text-zinc-900 md:text-3xl">
             Cart ({totalCount})
           </h1>
           {items.length > 0 && (
@@ -94,7 +94,7 @@ export default function CartPage() {
       </header>
 
       {items.length === 0 ? (
-        <Card className="flex flex-col items-center gap-4 p-10 text-center">
+        <Card className="flex flex-col items-center gap-4 p-8 text-center md:p-10">
           <p className="text-lg font-semibold text-zinc-900">
             Your cart is empty.
           </p>
@@ -125,30 +125,29 @@ export default function CartPage() {
               return (
                 <Card
                   key={item.id}
-                  className="flex  gap-4 p-4 sm:flex-row sm:items-center"
+                  className="flex gap-4 p-4 sm:flex-row sm:items-center md:p-5"
                 >
                   <div className="flex flex-1 flex-col gap-3">
                     <div className="flex flex-col gap-1">
                       <Link
-                        className="text-lg font-semibold text-zinc-900"
+                        className="text-base font-semibold text-zinc-900 md:text-lg"
                         href={`/products/${item.id}`}
                       >
                         {item.name}
                       </Link>
                       <p className="text-sm text-zinc-600">{item.price}</p>
-                      <div className="flex gap-5">
-
+                      <div className="flex flex-wrap items-center gap-4 md:gap-5">
                         <button
-                          className="text-sm font-semibold underline  tracking-[0.1em]  transition-colors hover:text-zinc-900"
+                          className="text-sm font-semibold underline tracking-[0.1em] transition-colors hover:text-zinc-900"
                           type="button"
                           onClick={() => removeCartItem(item.id)}
-                          >
+                        >
                           Remove
                         </button>
-                      <p className="text-sm font-semibold text-[#D86A5A]">
-                        {item.quantity} {copyLabel}
-                      </p>
-                          </div>
+                        <p className="text-sm font-semibold text-[#D86A5A]">
+                          {item.quantity} {copyLabel}
+                        </p>
+                      </div>
                     </div>
                     <div className="flex flex-wrap items-center gap-3">
                       {/* <div className="flex items-center gap-3 rounded-full border border-zinc-200 px-3 py-2">
@@ -175,7 +174,7 @@ export default function CartPage() {
                     </div>
                   </div>
                   <Link
-                    className="flex h-20 w-20 shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-zinc-100 sm:ml-4"
+                    className="flex h-20 w-20 shrink-0 items-center justify-center overflow-hidden rounded-2xl bg-zinc-100 sm:ml-4 md:h-24 md:w-24"
                     href={`/products/${item.id}`}
                   >
                     {item.image ? (
