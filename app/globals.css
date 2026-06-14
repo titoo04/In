@@ -148,3 +148,6 @@ body.splash-active {
 .bg-orange {
   background-color: #d86a5a;
 }
+.webkit-fill-available {
+  height: -webkit-fill-available;
+}

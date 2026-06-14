@@ -182,6 +182,8 @@ export default function CartPage() {
                         alt={item.name}
                         className="h-full w-full object-cover"
                         src={item.image}
+                        loading="lazy"
+                        decoding="async"
                       />
                     ) : (
                       <span className="text-[10px] uppercase tracking-[0.2em] text-zinc-500">

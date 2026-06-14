@@ -20,7 +20,7 @@ export const stateProducts: StateProduct[] = [
     id: "in-full",
     name: "IN (Full Book)",
     price: "1100 EGP",
-    image: "/assets/images/fullBook.png",
+    image: "/assets/images/fullBook.jpeg",
   },
   {
     id: "the-noise",
@@ -76,7 +76,7 @@ export const mainProducts: StateProduct[] = [
     id: "in-full",
     name: "IN (Full Book)",
     price: "1100 EGP",
-    image: "/assets/images/fullBook.png",
+    image: "/assets/images/fullBook.jpeg",
   },
   {
     id: "Bookmark",

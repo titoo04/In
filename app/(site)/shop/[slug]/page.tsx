@@ -30,6 +30,9 @@ export default async function ShopPage({ params }: PageProps) {
           alt=""
           className="absolute inset-0 h-full w-full object-cover"
           src={state.heroImage}
+          loading="eager"
+          fetchPriority="high"
+          decoding="async"
         />
         <div className="absolute inset-0 bg-black/55" />
         <div className="relative mx-auto flex w-full max-w-5xl flex-col gap-4 px-6 py-12 md:px-10 lg:px-16 md:py-16">

@@ -141,7 +141,7 @@ export default function CheckoutPage() {
           </p>
           <Link
             className="pillar bg-[#D5E0FF] px-10 py-3 text-lg font-semibold text-black"
-            href="/shop/noise"
+            href="/shop"
           >
             <span className="font-script text-2xl">The shop</span>
           </Link>

@@ -8,6 +8,7 @@ import ScrollHint from "@/components/proto/ScrollHint";
 import { states } from "@/data/prototype";
 
 const JOURNEY_COOKIE = "journey_complete";
+const SPLASH_COOKIE = "splash_seen";
 const pillImageBySlug: Record<string, string> = {
   noise: "/assets/images/NoiseButton.jpg",
   self: "/assets/images/SelfButton.jpg",
@@ -35,6 +36,12 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
+    if (document.cookie.includes(`${SPLASH_COOKIE}=1`)) {
+      setShowSplash(false);
+      setSplashFading(false);
+      return;
+    }
+
     if (!showSplash) {
       document.body.classList.remove("splash-active");
       document.documentElement.classList.remove("splash-active");
@@ -48,6 +55,7 @@ export default function Home() {
     }, 2000);
     const removeTimer = window.setTimeout(() => {
       setShowSplash(false);
+      document.cookie = `${SPLASH_COOKIE}=1; path=/; max-age=31536000; samesite=lax`;
     }, 2600);
 
     return () => {
@@ -121,6 +129,7 @@ export default function Home() {
   const dismissSplash = () => {
     setShowSplash(false);
     setSplashFading(false);
+    document.cookie = `${SPLASH_COOKIE}=1; path=/; max-age=31536000; samesite=lax`;
   };
 
   return (
@@ -153,6 +162,9 @@ export default function Home() {
             alt=""
             className="absolute inset-0 h-full w-full object-cover"
             src="/assets/images/TheNoiseBg.png"
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
           />
           {!introVideoError && (
             <video
@@ -161,7 +173,8 @@ export default function Home() {
               loop
               muted
               playsInline
-              preload="auto"
+              preload="metadata"
+              poster="/assets/images/TheNoiseBg.png"
               onError={() => setIntroVideoError(true)}
             >
               <source src="/assets/videos/N1.mp4" type="video/mp4" />
@@ -174,6 +187,9 @@ export default function Home() {
               alt=""
               className="w-full max-w-sm md:max-w-2xl lg:max-w-md"
               src="/assets/images/TextBg.png"
+              loading="eager"
+              fetchPriority="high"
+              decoding="async"
             />
           </div>
         </div>
@@ -189,12 +205,14 @@ export default function Home() {
           data-journey-panel
           data-journey-index={index + 1}
         >
-          <div className="relative min-h-screen overflow-hidden bg-black">
+          <div className="relative webkit-fill-available overflow-hidden bg-black">
             {state.backgroundImage && (
               <img
                 alt=""
                 className="absolute inset-0 h-full w-full object-cover"
                 src={state.backgroundImage}
+                loading="lazy"
+                decoding="async"
               />
             )}
             {!state.backgroundImage && state.backgroundClass && (
@@ -246,7 +264,7 @@ export default function Home() {
                 </Link>
               ))}
               <Link
-                className="border-zinc-200 text-xl underline font-script line-height-[1.5] md:text-2xl"
+                className=" text-xl underline font-script line-height-[1.5] md:text-2xl"
                 href="/shop"
               >
                 The shop

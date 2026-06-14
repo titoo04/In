@@ -77,6 +77,8 @@ export default function StateProductCard({ product }: StateProductCardProps) {
             alt={product.name}
             className="h-full w-full object-cover"
             src={product.image}
+            loading="lazy"
+            decoding="async"
           />
         </div>
         <div className="flex flex-col items-center">

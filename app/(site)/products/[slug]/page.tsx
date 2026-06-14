@@ -23,6 +23,7 @@ export default async function ProductPage({ params }: ProductPageProps) {
   }
 
   return (
+    <>
     <section className="mx-auto flex w-full max-w-4xl flex-col gap-8 px-6 py-16">
       <div className="flex flex-col gap-3">
         <p className="text-sm uppercase tracking-[0.2em] text-zinc-500">
@@ -62,15 +63,36 @@ export default async function ProductPage({ params }: ProductPageProps) {
             className="inline-flex items-center justify-center rounded-full bg-black px-5 py-2 text-sm font-semibold text-white transition-colors hover:bg-zinc-800"
             productId={productId}
           />
-          <Link
+          {/* <Link
             className="inline-flex items-center justify-center rounded-full border border-zinc-300 px-5 py-2 text-sm font-semibold text-zinc-900 transition-colors hover:bg-zinc-100"
             href="/products"
           >
             Back to products
-          </Link>
+          </Link> */}
         </div>
       </Card>
+      
     </section>
+     <div className="mt-12 flex flex-col items-center gap-6 text-center px-4 py-10 bg-black text-white">
+         <Link
+            className="pillar bg-[#D86A5A] uppercase py-3 px-9"
+            href="/products"
+          >
+            View all
+          </Link>
+        <p className="max-w-2xl text-xs text-white/80 --font-display font-thin">
+          "in" is a concept-led project that explores different states of
+          awareness through designed objects. each piece is part of a larger
+          experience, created to be engaged with, not just consumed.
+        </p>
+        <Link
+          className="text-sm text-white/80 uppercase font-medium self-start"
+          href="/where-are-you-now"
+        >
+          &lt; Back
+        </Link>
+      </div>
+      </>
   );
 }
 
