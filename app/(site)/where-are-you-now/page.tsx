@@ -40,7 +40,7 @@ export default function WhereAreYouNowPage() {
               </Link>
             ))}
             <Link
-              className="border-zinc-200 text-xl underline font-script line-height-[1.5] md:text-2xl"
+              className="text-black text-xl underline font-script line-height-[1.5] md:text-2xl"
               href="/shop"
             >
               The shop

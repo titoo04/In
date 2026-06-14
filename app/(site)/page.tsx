@@ -182,7 +182,7 @@ export default function Home() {
             </video>
           )}
           <div className="absolute inset-0 bg-black/20" />
-          <div className="relative z-10 flex min-h-screen items-center justify-center px-6 md:px-10 lg:px-8">
+          <div className="relative z-10 flex webkit-fill-available items-center justify-center px-6 md:px-10 lg:px-8">
             <img
               alt=""
               className="w-full max-w-sm md:max-w-2xl lg:max-w-md"
@@ -205,7 +205,7 @@ export default function Home() {
           data-journey-panel
           data-journey-index={index + 1}
         >
-          <div className="relative webkit-fill-available overflow-hidden bg-black">
+          <div className="relative  overflow-hidden bg-black">
             {state.backgroundImage && (
               <img
                 alt=""
@@ -264,7 +264,7 @@ export default function Home() {
                 </Link>
               ))}
               <Link
-                className=" text-xl underline font-script line-height-[1.5] md:text-2xl"
+                className=" text-xl text-black underline font-script line-height-[1.5] md:text-2xl"
                 href="/shop"
               >
                 The shop
