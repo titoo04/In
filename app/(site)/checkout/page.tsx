@@ -151,7 +151,7 @@ export default function CheckoutPage() {
   }
 
   return (
-    <section className="mx-auto flex w-full max-w-md flex-col gap-10 px-6 py-12 md:max-w-2xl md:px-10 lg:max-w-3xl">
+    <section className="mx-auto flex w-full bg-white max-w-md flex-col gap-10 px-6 py-12 md:max-w-2xl md:px-10 lg:max-w-3xl">
       <div className="flex flex-col gap-6">
         <div className="flex flex-col gap-3">
           <p className="text-xs font-semibold uppercase tracking-[0.3em] text-black">

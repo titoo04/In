@@ -72,7 +72,7 @@ export default function CartPage() {
   const totalCount = items.reduce((sum, item) => sum + item.quantity, 0);
 
   return (
-    <section className="mx-auto flex w-full max-w-5xl flex-col gap-8 px-4 py-12 md:px-6 md:py-16">
+    <section className="mx-auto flex w-full bg-white max-w-5xl flex-col gap-8 px-4 py-12 md:px-6 md:py-16">
       <header className="flex flex-col gap-2">
         <p className="text-xs uppercase tracking-[0.3em] text-zinc-500">
           Your cart
