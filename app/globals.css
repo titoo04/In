@@ -100,6 +100,7 @@ body.splash-active {
   background-size: 150% 100%;
   background-position: 0% center;
   transform: scale(1.2);
+  pointer-events: none;
 }
 
 .state-pill::after {
@@ -107,6 +108,7 @@ body.splash-active {
   position: absolute;
   inset: 0;
   background: linear-gradient(135deg, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0.35));
+  pointer-events: none;
 }
 
 .splash-fade {
@@ -149,5 +151,5 @@ body.splash-active {
   background-color: #d86a5a;
 }
 .webkit-fill-available {
-height: 100dvh;
+  height: 100dvh;
 }
