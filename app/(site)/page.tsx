@@ -205,7 +205,7 @@ export default function Home() {
           data-journey-panel
           data-journey-index={index + 1}
         >
-          <div className="relative  overflow-hidden bg-black">
+          <div className="relative webkit-fill-available overflow-hidden bg-black">
             {state.backgroundImage && (
               <img
                 alt=""
@@ -236,8 +236,8 @@ export default function Home() {
         data-journey-panel
         data-journey-index={states.length + 1}
       >
-        <div className="relative min-h-screen overflow-hidden bg-white">
-          <div className="relative z-10 mx-auto flex min-h-screen max-w-3xl flex-col items-center justify-center gap-6 px-6 text-center">
+        <div className="relative webkit-fill-available overflow-hidden bg-white">
+          <div className="relative z-10 mx-auto flex webkit-fill-available max-w-3xl flex-col items-center justify-center gap-6 px-6 text-center">
             <p className="text-[10px] uppercase tracking-[0.35em] text-zinc-500 md:text-xs">
               Final step
             </p>
