@@ -149,5 +149,5 @@ body.splash-active {
   background-color: #d86a5a;
 }
 .webkit-fill-available {
-  height: -webkit-fill-available;
+height: 100dvh;
 }
