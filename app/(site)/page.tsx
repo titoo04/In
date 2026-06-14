@@ -36,15 +36,20 @@ export default function Home() {
   }, []);
 
   useEffect(() => {
+    const removeSplashState = () => {
+      document.body.classList.remove("splash-active");
+      document.documentElement.classList.remove("splash-active");
+    };
+
     if (document.cookie.includes(`${SPLASH_COOKIE}=1`)) {
       setShowSplash(false);
       setSplashFading(false);
+      removeSplashState();
       return;
     }
 
     if (!showSplash) {
-      document.body.classList.remove("splash-active");
-      document.documentElement.classList.remove("splash-active");
+      removeSplashState();
       return;
     }
 
@@ -61,6 +66,7 @@ export default function Home() {
     return () => {
       window.clearTimeout(fadeTimer);
       window.clearTimeout(removeTimer);
+      removeSplashState();
     };
   }, [showSplash]);
 
